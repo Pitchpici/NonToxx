@@ -89,15 +89,15 @@ app.use(expressValidator({
 //_________________________________-______________________________________
 
 app.get("/", function(req, res) {
-  res.render("layouts/main");
+  res.render("./buttons");
 });
 
 app.get("/register", function (req, res) {
-  res.send("This will be the register page");
+  res.render("./register");
 });
 
 app.get("/login", function(req, res) {
-  res.render("This will be the login page");
+  res.render("./login");
 });
 
 //_________________________________-______________________________________
